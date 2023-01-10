@@ -19,4 +19,4 @@ This project is an NLP of BBC news articles which are categorised into one of fi
 ![Confusion_matrix](https://user-images.githubusercontent.com/121662880/211512550-7bb8f594-68a9-424b-b381-f175392fc414.png)
 
 ### Credits
-The dataset was obtained from --> https://raw.githubusercontent.com/susanli2016/PyCon-Canada-2019-NLPTutorial/master/bbc-text.csv
+The dataset was obtained from --> https://raw.githubusercontent.com/susanli2016/PyCon-Canada-2019-NLP-Tutorial/master/bbc-text.csv
