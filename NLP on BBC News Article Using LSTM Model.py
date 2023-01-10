@@ -45,7 +45,6 @@ Things to remove
 3) remove special character
 4) Make all lower case
 """
-
 for index, data in enumerate(df['text']):
     df['text'][index] = re.sub('[^a-zA-Z]', ' ', df['text'][index]).lower()
 
@@ -53,15 +52,12 @@ print(df['text'][500])
 
 # %%
 # Feature selection
-
 text = df['text']
 category = df['category']
 
 # %%
 # Data preprocessing
-
 # Tokenizer
-
 num_words = 5000
 oov_token = '<oov>'
 
@@ -91,7 +87,6 @@ x_train, x_test, y_train, y_test = train_test_split(padded_text, category, shuff
 
 # %%
 # Model development
-
 embedding_layer = 64
 
 model = Sequential()
@@ -124,7 +119,6 @@ y_predicted = model.predict(x_test)
 
 # %%
 # Model Analysis
-
 y_predicted = np.argmax(y_predicted, axis=1)
 y_test = np.argmax(y_test, axis=1)
 
@@ -135,6 +129,7 @@ cm = confusion_matrix(y_test, y_predicted)
 ConfusionMatrixDisplay(cm)
 
 # %%
+# Plot the confusion matrix
 disp = ConfusionMatrixDisplay(cm)
 disp.plot()
 
